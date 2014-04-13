@@ -17,5 +17,5 @@ main.cpp
 
 main.cpp contains an example of how Debug draw works. It's not a copy of the testbed, not even close, but you can create a few objects and fling them around.
 
-[Screenshot](http://imgur.com/zqcm5MB)
+![Screenshot](http://imgur.com/zqcm5MB)
 
