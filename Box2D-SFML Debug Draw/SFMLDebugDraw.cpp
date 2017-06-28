@@ -114,3 +114,12 @@ void SFMLDebugDraw::DrawTransform(const b2Transform& xf)
 	m_window->draw(redLine, 2, sf::Lines);
 	m_window->draw(greenLine, 2, sf::Lines);
 }
+
+void SFMLDebugDraw::DrawPoint(const b2Vec2 &p, float32 size, const b2Color &color)
+{
+    sf::CircleShape circle(size * sfdd::SCALE);
+    circle.setPosition(SFMLDebugDraw::B2VecToSFVec(p));
+    circle.setOutlineColor(SFMLDebugDraw::GLColorToSFML(color));
+
+    m_window->draw(circle);
+}
